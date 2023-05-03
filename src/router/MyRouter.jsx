@@ -4,14 +4,16 @@ import { ROUTES } from '../consts/routes'
 import Home from '../pages/Home'
 import Jobs from '../components/jobs/Jobs'
 import Category from '../components/category/Category'
+import Detail from '../components/detail/Detail'
 
 const MyRouter = () => {
   return (
     <div>
         <Routes>
-            {/* <Route path={ROUTES.BASE} element= {<Home/>} /> */}
             <Route path="/" element= {<Jobs/>}/>
             <Route path="/kateqoriya" element= {<Category/>}/>
+            <Route path="/detail/:id" element={<Detail />} />
+
         </Routes>
     </div>
   )

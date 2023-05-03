@@ -3,6 +3,7 @@ import SideBar from "./components/SideBar/SideBar";
 import MyRouter from "./router/MyRouter";
 import Jobs from "./components/jobs/Jobs";
 import Detail from "./components/detail/Detail";
+import Category from "./components/category/Category";
 
 function App() {
   return (

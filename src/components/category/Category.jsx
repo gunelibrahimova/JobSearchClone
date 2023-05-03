@@ -6,6 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
+import { useGetPostsQuery } from '../../api';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -16,17 +17,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Category = () => {
-  const [data, setData] = useState("")
   const [query, setQuery] = useState("");
-
-  fetch('http://localhost:3000/posts')
-    .then(response => response.json())
-    .then(data => setData(data))
-    .catch(error => console.error(error))
-
-  useEffect(() => {
-    console.log(data);
-  }, [])
+  const { data } = useGetPostsQuery();
 
   return (
     <div>
