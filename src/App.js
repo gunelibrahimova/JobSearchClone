@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Grid } from "@mui/material";
+import SideBar from "./components/SideBar/SideBar";
+import MyRouter from "./router/MyRouter";
+import Jobs from "./components/jobs/Jobs";
+import Detail from "./components/detail/Detail";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container direction="column" style={{ height: "100vh" }}>
+      <Grid item xs={12} style={{ border: "1px solid #EFEFEF", height: "33%", width: "16%" }}>
+        <SideBar />
+      </Grid>
+      <Grid item xs={12} style={{ border: "1px solid #EFEFEF",  height: "33%", width: "42%" }}>
+        <MyRouter/>
+      </Grid>
+      <Grid item xs={12} style={{ border: "1px solid #EFEFEF",  height: "33%", width: "42%" }}>
+        <Detail/>
+      </Grid>
+    </Grid>
   );
 }
 
