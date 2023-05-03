@@ -1,7 +1,5 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { ROUTES } from '../consts/routes'
-import Home from '../pages/Home'
 import Jobs from '../components/jobs/Jobs'
 import Category from '../components/category/Category'
 import Detail from '../components/detail/Detail'

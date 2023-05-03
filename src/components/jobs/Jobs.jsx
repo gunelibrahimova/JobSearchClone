@@ -22,12 +22,11 @@ const Jobs = () => {
     const [query, setQuery] = useState("");
     const { data } = useGetPostsQuery();
 
-
     return (
         <div>
             <Paper
                 component="form"
-                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 635 }}
+                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 630 }}
             >
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}

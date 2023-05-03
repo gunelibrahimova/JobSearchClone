@@ -7,7 +7,7 @@ import Category from "./components/category/Category";
 
 function App() {
   return (
-    <Grid container direction="column" style={{ height: "100vh" }}>
+    <Grid container direction="column" style={{ height: "150vh" }}>
       <Grid item xs={12} style={{ border: "1px solid #EFEFEF", height: "33%", width: "16%" }}>
         <SideBar />
       </Grid>
